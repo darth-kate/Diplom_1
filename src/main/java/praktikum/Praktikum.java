@@ -18,7 +18,7 @@ public class Praktikum {
         List<Ingredient> ingredients = database.availableIngredients();
 
         // Соберём бургер
-        burger.setBuns(buns.get(0));
+        burger.setBuns(buns.get(1));
 
         burger.addIngredient(ingredients.get(1));
         burger.addIngredient(ingredients.get(4));
@@ -26,10 +26,10 @@ public class Praktikum {
         burger.addIngredient(ingredients.get(5));
 
         // Переместим слой с ингредиентом
-        burger.moveIngredient(2, 1);
+        burger.moveIngredient(3, 1);
 
         // Удалим ингредиент
-        burger.removeIngredient(3);
+        burger.removeIngredient(2);
 
         // Распечатаем рецепт бургера
         System.out.println(burger.getReceipt());
