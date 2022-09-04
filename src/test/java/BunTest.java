@@ -7,15 +7,14 @@ public class BunTest {
 
     @Test
     public void getNameTest() {
-        Bun bun = new Bun("Флюоресцентная булка R2-D3", 988);
-        assertEquals("Метод должен возвращать строку Флюоресцентная булка R2-D3", "Флюоресцентная булка R2-D3", bun.getName());
+        Bun bun = new Bun("black bun", 100);
+        assertEquals("Метод должен возвращать строку black bun", "black bun", bun.getName());
     }
 
     @Test
     public void getPriceTest() {
-        Bun bun = new Bun("Флюоресцентная булка R2-D3", 988);
-        //assertEquals("Метод должен возвращать цену 988", 988, 0, bun.getPrice());
-        assertEquals("Метод должен возвращать цену 988",988, bun.getPrice(), 0);
+        Bun bun = new Bun("black bun", 100);
+        assertEquals("Метод должен возвращать цену 100",100, bun.getPrice(), 0);
     }
 
 }
